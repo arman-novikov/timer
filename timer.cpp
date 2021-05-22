@@ -116,3 +116,4 @@ bool Timer::is_running() const
 }
 
 const int Timer::TIMER_LOOP = -1;
+const int Timer::RECURSIVE_RELAUNCH = 2;

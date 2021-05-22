@@ -20,7 +20,7 @@ public:
   void routine(void *param = nullptr);
 
   static const int TIMER_LOOP;
-  static constexpr int RECURSIVE_RELAUNCH = 2;
+  static const int RECURSIVE_RELAUNCH;
 
   virtual ~Timer() = default;
 
