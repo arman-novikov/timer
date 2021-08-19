@@ -13,7 +13,7 @@ Timer no_name_task{HAL_GetTick}; // just init a timer
 heartbeater.launch(2000UL, Timer::TIMER_LOOP); // every 2 seconds print a msg
 //...
 no_name_task.launch(20UL * 1000UL, 1, [](void*){
-	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_0 ) 
+	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_0 );
 }); //  toggle a pin in 20s once (1)
 
 // main loop:
